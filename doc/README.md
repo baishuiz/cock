@@ -13,8 +13,8 @@
 ##约定
 
 
-dog | bird | cat
-----|------|----
+路径            | 说明      | cat
+----------|------|----
 foo | foo  | foo
 bar | bar  | bar
 baz | baz  | baz
