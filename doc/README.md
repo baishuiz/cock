@@ -14,17 +14,18 @@ webapp/src/themplate/layout/ |  页面模板全局layout
 
 
 ##约定
-1. webapp/src/pages/{pageName}命名  与 webapp/src/template/pageview/{pageName} 命名默认一一对应。
+1. webapp/src/pages/{pageName}目录命名与webapp/src/template/pageview/{pageName}目录命名默认一一对应。
 2. webapp/src/pages/{pageName}/{xxxx.js} 须符合 Air.js模块规则
 3. 
 
 ##配置
 ### 页面配置
 - 配置文件  webapp/src/pages/{pageName}/config.json
- {
+ 
+{{{ {
     "layout" : "layout name | layout file path",  
     "template" : "xxxxx"
- }
+ } }}}
 
 ##特殊文件
 1. webapp/src/pages/{pageName}/config.json
