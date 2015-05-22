@@ -27,8 +27,8 @@ webapp/src/themplate/layout/ |  页面模板全局layout
     }``
 - 配置项
 key            | 说明  | 缺省值
-----------      |------|------
-layout | 页面布局文件名或页面布局文件路径 | default
+----------     |------ |------
+layout | 页面布局文件名或页面布局文件路径 | default 
 
 
 
