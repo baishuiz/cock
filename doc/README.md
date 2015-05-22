@@ -21,11 +21,14 @@ webapp/src/themplate/layout/ |  页面模板全局layout
 ##配置
 ### 页面配置
 - 配置文件  webapp/src/pages/{pageName}/config.json
- 
+- 格式 
     ``{    
-    "layout" : "layout name | layout file path",     
-    "template" : "xxxxx"   
+    "layout" : "layout name | layout file path"     
     }``
+- 配置项
+key            | 说明  | 缺省值
+----------      |------|------
+layout | 页面布局文件名或页面布局文件路径 | default
 
 
 
