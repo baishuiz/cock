@@ -9,7 +9,8 @@ webapp/src/webresource/ |静态资源
 webapp/src/libs/ | 第三方类库
 webapp/src/pages/ | 前端页面逻辑
 webapp/src/pages/{pageName}/ | 具体页面逻辑，建议{pageName}与view一致
-webapp/src/themplate/ |  前端页面目标
+webapp/src/themplate/pageview |  前端页面模板
+webapp/src/template/pageview/{pageName} | 具体页面模板
 webapp/src/themplate/layout/ |  页面模板全局layout
 
 
@@ -26,16 +27,12 @@ webapp/src/themplate/layout/ |  页面模板全局layout
     "layout" : "layout name | layout file path"     
     }``
 - 配置项
-key            | 说明  | 缺省值
-----------     |------ |------
-layout | 页面布局文件名或页面布局文件路径 | default 
-
-
-
+  layout : layout文件名或相对路径
 
 ##特殊文件
-1. webapp/src/pages/{pageName}/config.json
-2. webapp/src/pages/{pageName}/event.json
+1. webapp/src/pages/{pageName}/config.json   // 页面私有配置
+2. webapp/src/pages/{pageName}/event.json    // 页面私有事件
+3. webapp/src/template/pageview/{pageName}/pattern.html   //页面模板基础结构
 
 ##发布
 
