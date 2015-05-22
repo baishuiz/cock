@@ -22,9 +22,9 @@ webapp/src/themplate/layout/ |  页面模板全局layout
 ### 页面配置
 - 配置文件  webapp/src/pages/{pageName}/config.json
  
-    ``{
-    "layout" : "layout name | layout file path",  
-    "template" : "xxxxx"
+    ``{  
+    "layout" : "layout name | layout file path",    
+    "template" : "xxxxx"  
     }``
 
 
