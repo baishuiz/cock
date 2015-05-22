@@ -24,9 +24,7 @@ webapp/src/themplate/layout/ |  页面模板全局layout
  
     ``{    
     "layout" : "layout name | layout file path",     
-
     "template" : "xxxxx"   
-    
     }``
 
 
