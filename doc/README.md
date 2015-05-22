@@ -1,7 +1,7 @@
 #说明
 ##目录结构
-|1. webapp |项目根目录|
-|2. webapp/dest/ |发布目录|
+1. webapp 项目根目录
+2. webapp/dest/ 发布目录
 3. webapp/src/  开发源代码
 4. webapp/src/webresource/ 静态资源
 5. webapp/src/libs/ 第三方类库
@@ -11,3 +11,10 @@
 
 
 ##约定
+
+
+dog | bird | cat
+----|------|----
+foo | foo  | foo
+bar | bar  | bar
+baz | baz  | baz
