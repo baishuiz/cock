@@ -1,0 +1,19 @@
+{
+  "name": "cock",
+  "version": "0.0.1",
+  "description": "client package manager by baishuiz@gmail.com",
+  "main": "cock.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.coding.net:airair/Air.project.git"
+  },
+  "author": "baishuiz@gmail.com",
+  "license": "ISC"
+}
