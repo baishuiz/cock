@@ -7,12 +7,16 @@
     "doc": "doc",
     "test": "test"
   },
+  "bin":{
+    "cock":"bin/cock.js"
+  },
+  "preferGlobal" : "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@git.coding.net:airair/Air.project.git"
+    "url": "git@github.com:baishuiz/cock.git"
   },
   "author": "baishuiz@gmail.com",
   "license": "ISC"
