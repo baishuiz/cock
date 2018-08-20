@@ -1,14 +1,11 @@
 {
   "name": "cock",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "client package manager by baishuiz@gmail.com",
   "main": "cock.js",
   "directories": {
     "doc": "doc",
     "test": "test"
-  },
-  "bin":{
-    "cock":"bin/cock.js"
   },
   "preferGlobal" : "true",
   "scripts": {
