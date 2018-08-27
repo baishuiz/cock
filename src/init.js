@@ -7,7 +7,7 @@ var fsCopy = require("./util/fsCopy.js")
 
 module.exports = function (appName) {
     fsCopy.mkdir(appName);
-    var templatePath = path.resolve(__dirname, "../template/0/webapp")
+    var templatePath = path.resolve(__dirname, "../template/0");
     fsCopy.copyDir(templatePath, appName);
     // fs.unlinkSync('/tmp/hello');
     
