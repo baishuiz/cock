@@ -1,7 +1,7 @@
 var util = require("util");
 var fs = require("fs");
 var path = require("path");
-var fsCopy = require("./util/fsCopy.js")
+var fsCopy = require("./util/fsCopy.js");
 
 
 
@@ -11,4 +11,4 @@ module.exports = function (appName) {
     fsCopy.copyDir(templatePath, appName);
     // fs.unlinkSync('/tmp/hello');
     
-}
+};
