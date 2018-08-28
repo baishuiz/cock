@@ -1,0 +1,20 @@
+{
+  "env": "dev",
+  "port": 8881,
+  "alias": "/mycjia/",
+  "restfullURL": "m.test.dev/",
+  "fileRestfullURL": "file.fatpms.com/",
+  "restfullURLMobile": "m.test.dev/",
+  "restfullURLWeb": "www.test.dev/",
+  "resourceURL": "/mycjia/",
+  "moduleTemplateURL": "/mycjia/",
+  "imageURL": "//image.cjbnb.com/",
+  "aMapKey": "7acb8bd4a131492caf7f148c1ec5de62",
+  "hybridKey": "cjiahybrid",
+  "restfullProtocol": "https",
+  "baiduStatsKey": "7508843887bc925861babeb3e7bade4c",
+  "stats": false,
+  "localCommonModulePath": "../static-resource/dist",
+  "commonModulePrefix": "https://image.cjia.com/CJfed/",
+  "frontConfig": ["resourceURL", "imageURL", "restfullURL", "restfullURLWeb", "aMapKey", "moduleTemplateURL", "stats", "baiduStatsKey", "restfullProtocol", "restfullURLMobile", "fileRestfullURL"]
+}
