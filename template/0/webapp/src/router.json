@@ -15,12 +15,12 @@
         },
         // 首页
         {
-            "viewName": "index",
+            "viewName": "indexpage",
             "rule": ""
         },
         // 首页
         {
-            "viewName": "index",
+            "viewName": "indexpage",
             "rule": "/index"
         },
         // 消息频道
