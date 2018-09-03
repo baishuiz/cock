@@ -1,6 +1,6 @@
 {
   "name": "cock",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "client package manager by baishuiz@gmail.com",
   "main": "src/cock.js",
   "directories": {

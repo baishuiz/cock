@@ -16,7 +16,7 @@ b.ready(function(deviceInfo){
   var customHeader = {};
 
   var env = {
-    $baseURL      : staticConfig.alias,
+    $baseURL      : '/mycjia',
     $isHybrid     : isHybrid,
     $isInApp      : isInApp,
     $sourceId     : sourceId,

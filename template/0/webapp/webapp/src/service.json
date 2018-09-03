@@ -1,0 +1,463 @@
+{
+  "config": [
+    {
+      "name": "default",
+      "param": {
+        "host": staticConfig.restfullURL,
+        "method": "POST",
+        "protocol": staticConfig.restfullProtocol,
+        "path": "",
+        "params": null,
+        "expiredSecond": null,
+        "timeout": 30
+      }
+    },
+    {
+      "name": "mobile",
+      "param": {
+        "host": staticConfig.restfullURLMobile,
+        "method": "POST",
+        "protocol": staticConfig.restfullProtocol,
+        "path": "",
+        "params": null,
+        "expiredSecond": null,
+        "timeout": 30
+      }
+    },
+    {
+      "name": "file",
+      "param": {
+        "host": staticConfig.fileRestfullURL,
+        "method": "POST",
+        "protocol": "https",
+        "header": {
+          "header": "",
+          "userToken": ""
+        },
+        "path": "",
+        "params": null,
+        "expiredSecond": null,
+        "timeout": 30
+      }
+    }
+  ],
+  "services": [
+    // 获取寄送申请
+    {
+      "name": "mobile.order.contractArchive.searchListContractSendApply",
+      "param": {
+        "path": "restapi/api/order/contractArchive/searchListContractSendApply/0",
+        "extend": "mobile"
+      }
+    },
+    // 创建寄送申请
+    {
+      "name": "mobile.order.contractArchive.createContractSendApply",
+      "param": {
+        "path": "restapi/api/order/contractArchive/createContractSendApply/0",
+        "extend": "mobile"
+      }
+    },
+    // 房间详情
+    {
+      "name": "mobile.product.room.searchDetailRoom",
+      "param": {
+        "path": "restapi/api/product/room/searchDetailRoom/0",
+        "extend": "mobile"
+      }
+    },
+    // 获得省市区树型数据
+    {
+      "name": "mobile.main.region.searchRegionTree",
+      "param": {
+        "path": "restapi/api/main/region/searchRegionTree/0",
+        "extend": "mobile"
+      }
+    },
+    // 获取用户信息
+    {
+      "name": "auth.userInfo",
+      "param": {
+        "path": "api/user/auth/userInfo/0",
+        "extend": "default"
+      }
+    },
+    //用户登录
+    {
+      "name": "service.user.login",
+      "param": {
+        "path": "restapi/api/tenement/service/user/login/1",
+        "extend": "default"
+      }
+    },
+    //用户登录
+    {
+      "name": "user.auth.login",
+      "param": {
+        "path": "restapi/api/user/auth/login",
+        "extend": "default"
+      }
+    },
+    //用户登出
+    {
+      "name": "user.auth.logout",
+      "param": {
+        "path": "api/user/auth/logout",
+        "extend": "default"
+      }
+    },
+    //获取验证码
+    {
+      "name": "service.common.getSMSCode",
+      "param": {
+        "path": "restapi/api/tenement/service/common/getSMSCode/0",
+        "extend": "default"
+      }
+    },
+    //获取验证码
+    {
+      "name": "main.message.sendValidationCode",
+      "param": {
+        "path": "restapi/api/main/message/sendValidationCode/0",
+        "extend": "default"
+      }
+    },
+    //用户注册  
+    {
+      "name": "service.user.registerTenant",
+      "param": {
+        "path": "restapi/api/user/auth/register",
+        "extend": "default"
+      }
+    },
+    //重置密码
+    {
+      "name": "user.resetPwd",
+      "param": {
+        "path": "restapi/api/tenement/service/user/resetPwd/0",
+        "extend": "default"
+      }
+    },
+    //重置密码
+    {
+      "name": "user.resetPwd",
+      "param": {
+        "path": "restapi/api/user/auth/resetPassword",
+        "extend": "default"
+      }
+    },
+    // 查询消息列表
+    {
+      "name": "message.searchListMessage",
+      "param": {
+        "path": "restapi/api/main/message/searchListMessage",
+        "extend": "default"
+      }
+    },
+    // 设置消息已读
+    {
+      "name": "message.updateMessageRead",
+      "param": {
+        "path": "restapi/api/main/message/updateMessageRead",
+        "extend": "default"
+      }
+    },
+    // 删除消息
+    {
+      "name": "message.deleteMessage",
+      "param": {
+        "path": "restapi/api/main/message/deleteMessage",
+        "extend": "default"
+      }
+    },
+    // 清空消息中心
+    {
+      "name": "message.clearMessage",
+      "param": {
+        "path": "restapi/api/main/message/clearMessage",
+        "extend": "default"
+      }
+    },
+    //查询用户短租订单列表
+    {
+      "name": "dcorder.order.searchListMydcorder",
+      "param": {
+        "path": "restapi/svr/dcorder/order/searchListMydcorder/0",
+        "extend": "default"
+      }
+    },
+    //支付订单
+    {
+      "name": "dcorder.order.payOrder",
+      "param": {
+        "path": "restapi/svr/dcorder/order/payOrder/0",
+        "extend": "default"
+      }
+    },
+    //查询用户短租订单详情
+    {
+      "name": "dcorder.order.searchDetaildcorder",
+      "param": {
+        "path": "restapi/svr/dcorder/order/searchDetaildcorder/0",
+        "extend": "default"
+      }
+    },
+    //预先退订订单
+    {
+      "name": "dcorder.order.previousDebookOrder",
+      "param": {
+        "path": "restapi/svr/dcorder/order/previousDebookOrder/0",
+        "extend": "default"
+      }
+    },
+    //退订订单
+    {
+      "name": "dcorder.order.debookdcorder",
+      "param": {
+        "path": "restapi/svr/dcorder/order/debookdcorder/0",
+        "extend": "default"
+      }
+    },
+    //取消订单
+    {
+      "name": "dcorder.order.cancelMydcorder",
+      "param": {
+        "path": "restapi/svr/dcorder/order/cancelMydcorder/0",
+        "extend": "default"
+      }
+    },
+    // 获取酒店订单列表
+    {
+      "name": "hotelorder.booking.searchListHotelOrder",
+      "param": {
+        "path": "restapi/svr/hotelorder/booking/searchListMyHotelOrder/0",
+        "extend": "default"
+      }
+    },
+    // 获取支付订单信息
+    {
+      "name": "hotelorder.order.payOrder",
+      "param": {
+        "path": "restapi/svr/hotelorder/order/payOrder/0",
+        "extend": "default"
+      }
+    },
+    // 获取酒店订单详情
+    {
+      "name": "hotelorder.booking.searchDetailHotelOrder",
+      "param": {
+        "path": "restapi/svr/hotelorder/booking/searchDetailHotelOrder/0",
+        "extend": "default"
+      }
+    },
+    // 预先取消酒店订单预定
+    {
+      "name": "hotelorder.order.previousCancelOrder",
+      "param": {
+        "path": "restapi/svr/hotelorder/order/previousCancelOrder/0",
+        "extend": "default"
+      }
+    },
+    // 取消酒店订单预定
+    {
+      "name": "hotelorder.booking.cancelOrder",
+      "param": {
+        "path": "restapi/svr/hotelorder/booking/cancelOrder/0",
+        "extend": "default"
+      }
+    },
+    // 更新用户详情
+    {
+      "name": "user.auth.modUserInfo",
+      "param": {
+        "path": "restapi/api/user/auth/modUserInfo",
+        "extend": "default"
+      }
+    },
+    // 用户详情
+    {
+      "name": "user.auth.searchUserInfo",
+      "param": {
+        "path": "restapi/api/user/auth/searchUserInfo",
+        "extend": "default"
+      }
+    },
+    // 校验原手机
+    {
+      "name": "user.auth.verifyMobile",
+      "param": {
+        "path": "restapi/api/user/auth/verifyMobile",
+        "extend": "default"
+      }
+    },
+    // 退款单列表查询
+    {
+      "name": "refund.searchListRefundOrder",
+      "param": {
+        "path": "restapi/svr/user/refund/searchListRefundOrder",
+        "extend": "default"
+      }
+    },
+    // 修改手机号
+    {
+      "name": "user.auth.updateMobilephone",
+      "param": {
+        "path": "restapi/api/user/auth/updateMobilephone",
+        "extend": "default"
+      }
+    },
+    // 租约列表
+    {
+      "name": "order.rentalcontract.searchListUserContract",
+      "param": {
+        "path": "restapi/svr/order/rentalcontract/searchListUserContract",
+        "extend": "default"
+      }
+    },
+    // 租约详情
+    {
+      "name": "order.rentalcontract.searchDetailUserContract",
+      "param": {
+        "path": "restapi/svr/order/rentalcontract/searchDetailUserContract",
+        "extend": "default"
+      }
+    },
+    // 取消租约
+    {
+      "name": "service.rentalContract.cancelRentalContract",
+      "param": {
+        "path": "restapi/service/rentalContract/cancelRentalContract/7",
+        "extend": "default"
+      }
+    },
+    // 订单详情查询
+    {
+      "name": "unifiedorder.order.searchDetaiUserOrder",
+      "param": {
+        "path": "restapi/svr/unifiedorder/order/searchDetaiUserOrder/0",
+        "extend": "default"
+      }
+    },
+    // 修改密码
+    {
+      "name": "user.auth.updatePassword",
+      "param": {
+        "path": "restapi/api/user/auth/updatePassword",
+        "extend": "default"
+      }
+    },
+    // 修改邮箱  
+    {
+      "name": "user.auth.updateEmail",
+      "param": {
+        "path": "restapi/svr/user/auth/updateEmail",
+        "extend": "default"
+      }
+    },
+    // 搜索评分项
+    {
+      "name": "comment.score.searchScoreItemForSvr",
+      "param": {
+        "path": "restapi/svr/comment/score/searchScoreItemForSvr/0",
+        "extend": "default"
+      }
+    },
+     // 查询退款详情
+
+    {
+      "name": "user.refund.searchRefundDetail",
+      "param": {
+        "path": "restapi/svr/user/refund/searchRefundDetail",
+        "extend": "default"
+      }
+    },
+    // 添加评论
+    {
+      "name": "comment.score.addCommentScore",
+      "param": {
+        "path": "restapi/svr/comment/score/addCommentAndScore/0",
+        "extend": "default"
+      }
+    },
+    // 查看评论
+    {
+      "name": "comment.score.SearchCommentScoreSingle4Svr",
+      "param": {
+        "path": "restapi/svr/comment/score/searchCommentScoreSingle4Svr/0",
+        "extend": "default"
+      }
+    },
+    // 上传图片
+    {
+      "name": "fileService.putObjectRest",
+      "param": {
+        "path": "fileService/putObjectRest",
+        "extend": "file"
+      }
+    },
+    // 统一订单列表
+    {
+      "name": "unifiedorder.order.searchListUserOrder",
+      "param": {
+        "path": "restapi/svr/unifiedorder/order/searchListUserOrder/0",
+        "extend": "default"
+      }
+    },      
+    //看房预约
+    {
+      "name": "svr.order.reservation.searchListMyReservation",
+      "param": {
+        "path": "restapi/svr/order/reservation/searchListMyReservation/0",
+        "extend": "default"
+      }
+    },
+    //预先退订订单
+    {
+      "name": "unifiedorder.order.previousCancelUserOrder",
+      "param": {
+        "path": "restapi/svr/unifiedorder/order/previousCancelUserOrder/0",
+        "extend": "default"
+      }
+    },
+    //支付订单
+    {
+      "name": "unifiedorder.order.payOrder",
+      "param": {
+        "path": "restapi/svr/unifiedorder/order/payOrder/0",
+        "extend": "default"
+      }
+    },
+    //取消订单
+    {
+      "name": "unifiedorder.order.cancelUserOrder",
+      "param": {
+        "path": "restapi/svr/unifiedorder/order/cancelUserOrder/0",
+        "extend": "default"
+      }
+    },
+    //计算退订订单
+    {
+      "name": "unifiedorder.order.calcOrderDebookRefundDetails",
+      "param": {
+        "path": "restapi/svr/unifiedorder/order/calcOrderDebookRefundDetails/0",
+        "extend": "default"
+      }
+    },
+    //意见反馈
+    {
+      "name": "svr.user.feedback.addFeedback",
+      "param": {
+        "path": "restapi/svr/user/feedback/addFeedback",
+        "extend": "default"
+      }
+    },
+    //城家钱包
+    {
+      "name": "account.getAccountList",
+      "param": {
+        "path": "restapi/api/account/getAccountList",
+        "extend": "default"
+      }
+    }
+  ]
+}
