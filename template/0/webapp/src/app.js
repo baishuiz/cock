@@ -31,9 +31,9 @@ b.ready(function(deviceInfo){
     $webappPath   : webappPath,
     $aMapKey      : staticConfig.aMapKey,
     $TDK          : {
-      title: '酒店预订,酒店价格查询,手机订酒店-城家生活手机版',
-      description: '城家生活手机版为您提供国内各大城市的长租酒店预订,酒店价格查服务、详细的酒店地址、酒店图片等酒店信息尽在城家生活手机版。',
-      keywords: '酒店,酒店预订,酒店查询,酒店地址,手机订酒店'
+      title: 'title',
+      description: 'description',
+      keywords: 'keywords'
     },
     $svcErrorTip : '请求数据异常，请检查网络或刷新看看',
     $moduleTemplateURL : staticConfig.moduleTemplateURL,
