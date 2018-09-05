@@ -12,7 +12,7 @@ module.exports = function (appName) {
         fsCopy.copyDir(templatePath, appName);
         // fs.unlinkSync('/tmp/hello');
     } else {
-        console.warn("project folder" + [appName] + "is exists.")
+        console.warn("project folder" + [appName] + " is exists.");
     }
     
     
